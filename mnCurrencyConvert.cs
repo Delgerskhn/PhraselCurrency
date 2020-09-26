@@ -10,13 +10,15 @@ class Program
     }
     
     static List<long> dividerInts = new List<long>(){1000, 1000000, 1000000000, 1000000000000};//ih nayd hurtel uldegdeltei huvaagchid
-    static List<string> phraseInts = new List<string>(){"Мянга", "Сая", "Тэрбум", "Их наяд"};
+    static List<string> phraseInts = new List<string>(){"мянга", "сая", "тэрбум", "их наяд"};
 
-    static string hundredStr = "Зуун";
+    static string hundredStr = "зуун";
     
-    static string CurrencyUnitStr = "Төгрөг";
+    static string CurrencyUnitStr = "төгрөг";
     
     static string phraselCurrency(long currency) {
+        if(currency >= 1000000000000000)
+            return "999 их наядаас их тоо байна!"
         //divider ints hoinoos ni davtana
         //ehnii gurvan orong avna
         //uldegdeltei huvaagaad hargalzah phraseInt iig zalgaj ehnii gurvan orong ustgana
@@ -66,44 +68,44 @@ class Program
 
     static string oneUnitSwitch(int unit) {
             if(unit == 1)
-                return "Нэг";
+                return "нэг";
             if(unit == 2)
-                return "Хоёр";
+                return "хоёр";
             if(unit == 3)
-                return "Гурван";
+                return "гурван";
             if(unit == 4)
-                return "Дөрвөн";
+                return "дөрвөн";
             if(unit == 5)
-                 return "Таван";
+                 return "таван";
             if(unit == 6)
-                return "Зургаан";
+                return "зургаан";
             if(unit == 7)
-                return "Долоон";
+                return "долоон";
             if(unit == 8)
-                return "Найман";
+                return "найман";
             if(unit == 9)
-                return "Есөн";
+                return "есөн";
             return "";
     }
      static string twoUnitSwitch(int unit) {
             if(unit == 10)
-                return "Арван";
+                return "арван";
             if(unit == 20)
-                return "Хорин";
+                return "хорин";
             if(unit == 30)
-                return "Гучин";
+                return "гучин";
             if(unit == 40)
-                return "Дөчин";
+                return "дөчин";
             if(unit == 50)
-                 return "Тавин";
+                 return "тавин";
             if(unit == 60)
-                return "Жаран";
+                return "жаран";
             if(unit == 70)
-                return "Далан";
+                return "далан";
             if(unit == 80)
-                return "Наяан";
+                return "наяан";
             if(unit == 90)
-                return "Ерэн";
+                return "ерэн";
         return "";
     }
 }
